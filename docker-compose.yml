@@ -1,0 +1,18 @@
+services:
+  giga-am-wyoming:
+    build: .
+    image: giga-am-wyoming
+    container_name: giga-am-wyoming
+    restart: unless-stopped
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "15m"
+        max-file: "7"
+
+    ports:
+      - "127.0.0.1:10500:10500"
+
+    volumes:
+      - /opt/huggingface-data:/root/.cache
