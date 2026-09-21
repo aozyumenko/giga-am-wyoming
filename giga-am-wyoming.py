@@ -24,14 +24,14 @@ SERVER_INFO = Info(
     asr=[AsrProgram(
         name="GigaAM-v3",
         description="Salute Developers GigaAM-v3 Speech-to-Text via ONNX",
-        attribution=Attribution(name="Salute Developers", url="https://github.com"),
+        attribution=Attribution(name="Salute Developers", url="https://github.com/salute-developers/GigaAM"),
         installed=True,
         version="3.0",
         models=[
             AsrModel(
                 name="gigaam-v3-e2e-ctc",
                 description="GigaAM v3 End-to-End CTC Model",
-                attribution=Attribution(name="Salute Developers", url="https://github.com"),
+                attribution=Attribution(name="Salute Developers", url="https://github.com/salute-developers/GigaAM"),
                 installed=True,
                 languages=["ru"],
                 version="3.0",
